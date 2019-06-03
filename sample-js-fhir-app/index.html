@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>SMART-ON-FHIR-APP</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <div>
+    <h2>My Name is : <span id="patient_name">...</span>!</h2>
+    <h2>gender : <span id="patient_gender"></span></h2>
+    <h2>D.O.B : <span id="patient_birthDate"></span></h2>
+    <p>Click the button for Patient details.</p>
+    <button class="js-fetchPatientDetails">Click me</button><br/>
+    <p>click the below button to post the patient data....<p/>
+    <button class="js-updatePatientDetails">click here</button>
+  </div>
+</body>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src='./lib/js/fhir-client-v0.1.12.js'></script>
+  	<script src="./src/js/patientGateway.js" type="text/javascript"></script>
+</html>
